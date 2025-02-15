@@ -1,0 +1,36 @@
+[submodule "acf/acf-builder"]
+	path = acf/acf-builder
+	url = https://github.com/StoutLogic/acf-builder.git
+[submodule "acf/acf-composer"]
+	path = acf/acf-composer
+	url = https://github.com/Log1x/acf-composer.git
+[submodule "acf/acf-extended"]
+	path = acf/acf-extended
+	url = https://github.com/acf-extended/acf-extended.git
+[submodule "acf/acf-theme-code"]
+	path = acf/acf-theme-code
+	url = https://github.com/HookturnDigital/acf-theme-code.git
+[submodule "acf/acf-field-group-composer"]
+	path = acf/acf-field-group-composer
+	url = https://github.com/flyntwp/acf-field-group-composer.git
+[submodule "acf/acf-builder-cheatsheet"]
+	path = acf/acf-builder-cheatsheet
+	url = https://github.com/Log1x/acf-builder-cheatsheet.git
+[submodule "acf/acf-tools"]
+	path = acf/acf-tools
+	url = https://github.com/RostiMelk/ACF-Tools.git
+[submodule "acf/wp-api"]
+	path = acf/wp-api
+	url = https://github.com/WP-API/WP-API.git
+[submodule "seo/the-seo-framework"]
+	path = seo/the-seo-framework
+	url = https://github.com/sybrew/the-seo-framework.git
+[submodule "seo/wp-rocket-helper"]
+	path = seo/wp-rocket-helper
+	url = https://github.com/wp-media/wp-rocket.git
+[submodule "membership/wp-simple-membership"]
+	path = membership/wp-simple-membership
+	url = https://github.com/wp-insider/simple-membership.git
+[submodule "woo/woocommerce-rest-api"]
+	path = woo/woocommerce-rest-api
+	url = https://github.com/woocommerce/woocommerce-rest-api.git
