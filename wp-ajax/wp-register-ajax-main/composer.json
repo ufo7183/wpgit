@@ -1,0 +1,50 @@
+{
+  "name": "arraypress/wp-register-ajax",
+  "version": "1.0.0",
+  "description": "A comprehensive WordPress AJAX registration system with validation, nonce handling, and response formatting",
+  "type": "library",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/arraypress/wp-register-ajax/",
+  "authors": [
+    {
+      "name": "David Sherlock",
+      "homepage": "https://arraypress.com/"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "ArrayPress\\WP\\Register\\": "src/"
+    },
+    "files": [
+      "src/Utilities.php"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "support": {
+    "issues": "https://github.com/arraypress/wp-register-ajax/issues",
+    "source": "https://github.com/arraypress/wp-register-ajax"
+  },
+  "keywords": [
+    "wordpress",
+    "ajax",
+    "wp-ajax",
+    "ajax-actions",
+    "nonce",
+    "validation",
+    "wordpress-ajax",
+    "wp-admin-ajax",
+    "ajax-handler",
+    "ajax-validation",
+    "ajax-response",
+    "ajax-security"
+  ]
+}

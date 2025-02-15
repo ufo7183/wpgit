@@ -1,0 +1,3 @@
+# Developer Tools
+
+There are a wide variety of tools available to help with plugin development. Some of them are run in your development environment ([xdebug](https://xdebug.org/), [PHPCS](https://github.com/WordPress/WordPress-Coding-Standards), etc), but there are also some excellent tools that can run right inside WordPress to help you build things properly and diagnose problems. This chapter deals with the in-browser tools.

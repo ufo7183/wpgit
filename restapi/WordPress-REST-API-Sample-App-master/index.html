@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WordPress REST API Demo</title>
+        <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+
+        <!-- Start Top Bar -->
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li class="menu-text site-title"></li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+
+            </div>
+        </div>
+        <!-- End Top Bar -->
+
+        <div class="callout large primary">
+            <div class="row column text-center">
+                <h1 class="description"></h1>
+            </div>
+        </div>
+
+        <div class="row" id="content">
+            <!-- Main contents of the app -->
+            <div class="medium-8 columns" id="main-content"></div>
+            
+            
+            <div class="medium-3 columns" data-sticky-container>
+                <div class="sticky" data-sticky data-anchor="content">
+                    <h4>Categories</h4>
+                    <div id="categories"></div>
+                    
+                    <script type="text/template" id="blog-categories-template">
+                    {{#categories}}
+                    <div class="category">{{name}}</div>                            
+                    {{/categories}}
+                    </script>
+
+                   
+                </div>
+            </div>
+        </div>
+
+        <script src="includes/lib/js/jquery.min.js"></script>
+        <script src="includes/lib/js/mustache.min.js"></script>
+        <script src="includes/app/main.js"></script>
+        
+        <script type="text/template" id="blog-post-template">
+        {{#posts}}
+        <div class="blog-post" data-id="{{id}}">
+            <h3>{{title.rendered}} <small>{{date}}</small></h3>
+            <img class="thumbnail" src="{{_embedded.wp:featuredmedia.0.source_url}}">
+
+            <div class="callout">
+                <ul class="menu simple">
+                    <li>Author: {{_embedded.author.0.name}}</li>
+                </ul>
+            </div>
+        </div>
+        {{/posts}}
+        </script>
+
+        <script type="text/template" id="single-post-template">
+
+        <div class="blog-post" data-id="{{id}}">
+
+            <a href="index.html" class="button back-button">Go back</a>
+
+            <h3>{{title.rendered}} <small>{{date}}</small></h3>
+            <img class="thumbnail" src="{{_embedded.wp:featuredmedia.0.source_url}}">
+
+            <div>{{{content.rendered}}}</div>
+
+            <div class="callout">
+                <ul class="menu simple">
+                    <li>Author: {{_embedded.author.0.name}}</li>
+                </ul>
+            </div>
+        </div>
+
+        </script>
+
+        
+        
+    </body>
+</html>
+
+
+
