@@ -9,6 +9,7 @@
 ## 📂目錄總覽
 | 📂 目錄名稱 | 說明 |
 |------------|--------|
+<<<<<<< HEAD
 | [`cpt/`](cpt/README.md) | **Custom Post Type（CPT）**：WordPress 自訂文章類型與分類法 |
 | [`elementor/`](elementor/README.md) | **Elementor**：Elementor 小工具（Widgets）開發指南 |
 | [`hook/`](hook/README.md) | **Hooks（Actions & Filters）**：WordPress 核心鉤子開發 |
@@ -61,3 +62,20 @@
 
 📢 **本專案將持續更新，歡迎關注與貢獻！**
 
+=======
+| [`cpt/`](cpt/README.md) |  **Custom Post Type（CPT）**：WordPress 自訂文章類型與分類法 |
+| [`elementor/`](elementor/README.md) |  **Elementor**：Elementor 小工具（Widgets）開發指南 |
+| [`hook/`](hook/README.md) | 🔗 **Hooks（Actions & Filters）**：WordPress 核心鉤子開發 |
+| [`restapi/`](restapi/README.md) |  **WordPress REST API**：自訂 API 端點與資料操作 |
+| [`safety/`](safety/README.md) |  **安全性規範**：WordPress 開發安全最佳實踐 |
+| [`searchandfilter/`](searchandfilter/README.md) | 🔍 **搜尋與篩選**：建立高效的搜尋與篩選功能 |
+| [`wp-ajax/`](wp-ajax/README.md) |  **AJAX 技術**：使用 AJAX 讓 WordPress 更動態化 |
+| [`wphandbook/`](wphandbook/README.md) |  **WordPress 開發手冊**：WordPress 重要開發知識彙整 |
+
+---
+
+##  如何使用？
+1️**下載專案**
+```bash
+git clone https://github.com/ufo7183/wpgit.git
+>>>>>>> 2df1dd0 (更新 README.md 並新增 WordPress 開發 SOP)
