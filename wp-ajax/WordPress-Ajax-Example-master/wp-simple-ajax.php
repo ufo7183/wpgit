@@ -18,7 +18,7 @@ add_action( 'wp_enqueue_scripts', 'gens_add_ajax_support' );
  * @since    1.0.0
  */
 function gens_add_ajax_support() {
-     
+
 
     wp_enqueue_script( 'ajax-script', plugin_dir_url( __FILE__ ) . 'frontend.js', array( 'jquery' ));
     wp_localize_script('ajax-script','gens_demo',
@@ -27,7 +27,7 @@ function gens_add_ajax_support() {
             'postNonce' => wp_create_nonce( 'myajax-post-nonce' )
         )
     );
-     
+
 }
 
 add_action( 'wp_ajax_get_current_user_info', 'gens_get_current_user_info' );
@@ -48,14 +48,14 @@ function gens_get_current_user_info() {
 	}
  	// Grab the current user's ID
     $user_id = get_current_user_id();
- 
+
     // If the user is logged in and the user exists, return success with the user JSON
-    if ( _gens_user_is_logged_in( $user_id ) && _gens_user_exists( $user_id ) ) {
- 
+if ( _gens_user_is_logged_in( $user_id ) && _gens_user_exists( $user_id ) ) {
+
         wp_send_json_success(
             json_encode( get_user_by( 'id', $user_id ) )
         );
- 
+
     }
 }
 
@@ -71,15 +71,15 @@ function gens_get_current_user_info() {
  * @param    int    $user_id    The current user's ID.
  */
 function _gens_user_is_logged_in( $user_id ) {
- 
+
     if ( 0 === $user_id ) {
- 
+
         wp_send_json_error(
             new WP_Error( '-2', 'The visitor is not currently logged into the site.' )
         );
- 
+
     }
- 
+
 }
 
 /**
@@ -94,13 +94,14 @@ function _gens_user_is_logged_in( $user_id ) {
  * @param    int    $user_id    The current user's ID.
  */
 function _gens_user_exists( $user_id ) {
- 
+
     if ( 0 === $user_id ) {
- 
+
         wp_send_json_error(
-            new WP_Error( '-3', 'The visitor does not have an account with this site.' );
-        );
- 
+                new WP_Error( '-3', 'The visitor does not have an account with this site.' )
+            );
+        ;
+
     }
- 
+
 }
