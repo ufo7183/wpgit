@@ -27,7 +27,7 @@
 ## 📂目錄總覽
 | 📂 目錄名稱 | 說明 |
 |------------|--------|
-<<<<<<< HEAD
+
 | [`cpt/`](cpt/README.md) | **Custom Post Type（CPT）**：WordPress 自訂文章類型與分類法 |
 | [`elementor/`](elementor/README.md) | **Elementor**：Elementor 小工具（Widgets）開發指南 |
 | [`hook/`](hook/README.md) | **Hooks（Actions & Filters）**：WordPress 核心鉤子開發 |
@@ -80,7 +80,7 @@
 
 📢 **本專案將持續更新，歡迎關注與貢獻！**
 
-=======
+
 | [`cpt/`](cpt/README.md) |  **Custom Post Type（CPT）**：WordPress 自訂文章類型與分類法 |
 | [`elementor/`](elementor/README.md) |  **Elementor**：Elementor 小工具（Widgets）開發指南 |
 | [`hook/`](hook/README.md) | 🔗 **Hooks（Actions & Filters）**：WordPress 核心鉤子開發 |
